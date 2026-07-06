@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل مع عز</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Paprika&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("8KHyRtS1Pf7SGDbVY");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <section class="contact-page">
+        <div class="contact-box">
+            <h1>تواصل معي</h1>
+            <p class="desc">يسعدني تواصلك، ويمكنك التواصل مباشرة عبر المعلومات التالية:</p>
+
+            <div class="phone-box">
+                <span class="phone-label">رقم الجوال:</span>
+                <span class="phone-number">0561062227</span>
+            </div>
+
+            <div class="email-box">
+                <span class="email-label">البريد الإلكتروني:</span>
+                <span class="email-address">azoooozzzzz412@gmail.com</span>
+            </div>
+
+            <a href="https://wa.me/966561062227" class="whatsapp-contact">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="واتساب">
+                تواصل عبر واتساب
+            </a>
+
+            <form id="contactForm" class="contact-form">
+                <input type="text" id="name" placeholder="اسمك" required>
+                <input type="email" id="email" placeholder="بريدك" required>
+                <textarea id="message" placeholder="رسالتك" required></textarea>
+                <button type="submit">إرسال</button>
+            </form>
+
+            <a href="index.html" class="back-btn">العودة للصفحة الرئيسية</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
