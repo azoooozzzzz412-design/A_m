@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- تأثير اللمعة -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- الدائرة المحيطة -->
+  <circle cx="100" cy="100" r="70" stroke="#a8bfff" stroke-width="2" fill="none" filter="url(#glow)"/>
+
+  <!-- النص AZ -->
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-family="Playfair Display, serif" font-size="60"
+        fill="#f0f0f0" filter="url(#glow)">AZ</text>
+</svg>
